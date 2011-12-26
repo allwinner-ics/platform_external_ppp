@@ -1629,6 +1629,10 @@ device_script(program, in, out, dont_wait)
 	    }
 	    --conn_running;
 	}
+	if(status == 1280) {
+		error("%s:status = %d", __FUNCTION__, status);
+		status = 0;
+	}
 	return (status == 0 ? 0 : -1);
     }
 

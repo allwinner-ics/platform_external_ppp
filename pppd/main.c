@@ -1629,7 +1629,7 @@ device_script(program, in, out, dont_wait)
 	    }
 	    --conn_running;
 	}
-	if(status == 1280) {
+	if(status == 1280) { // for zoom data dongle
 		error("%s:status = %d", __FUNCTION__, status);
 		status = 0;
 	}
